@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Police CyberCrime - Criminal Face Identifier</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1593642634367-d91a135587b5?fit=crop&w=1500&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #e0e7ff;
+      text-align: center;
+    }
+
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 30px 0;
+      border-bottom: 3px solid #60a5fa;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      font-weight: 300;
+    }
+
+    main {
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .video-container {
+      position: relative;
+      width: 640px;
+      max-width: 90%;
+      margin-top: 30px;
+    }
+
+    video, canvas {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.7);
+    }
+
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .controls {
+      margin-top: 25px;
+    }
+
+    .controls button {
+      padding: 14px 28px;
+      margin: 0 12px;
+      font-size: 1rem;
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .controls button:hover {
+      background-color: #1d4ed8;
+    }
+
+    .status {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #93c5fd;
+    }
+
+    .info {
+      max-width: 750px;
+      margin: 40px auto;
+      font-size: 1.15rem;
+      line-height: 1.8;
+      background: rgba(30, 58, 138, 0.85);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+      color: #dbeafe;
+    }
+
+    footer {
+      background-color: #1e293b;
+      color: #cbd5e1;
+      padding: 18px 0;
+      margin-top: 50px;
+      border-top: 2px solid #60a5fa;
+    }
+
+    a.login-btn {
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .login-btn button {
+      background-color: #0ea5e9;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .login-btn button:hover {
+      background-color: #0284c7;
+    }
+
+    h2 {
+      color: #93c5fd;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Police CyberCrime Unit</h1>
+    <p>Real-Time Criminal Face Detection & Missing Persons Tracker</p>
+  </header>
+
+  <a class="login-btn" href="/login">
+    <button>Admin Login</button>
+  </a>
+
+  <section class="info">
+    <h2>About Criminal Face Identification</h2>
+    <p>
+      Our system uses AI-powered face detection to recognize and match faces against a database of known criminals and missing persons.
+      It assists law enforcement agencies in real-time surveillance, improving public safety, and finding missing individuals quickly.
+    </p>
+    <p>
+      Equipped with deep learning and neural network models, the system can scan live camera feeds, detect multiple faces simultaneously,
+      and alert authorities when a match is found. It ensures faster investigations and safer communities.
+    </p>
+    <h2>Applications</h2>
+    <ul style="list-style: none; padding: 0; margin-top: 20px;">
+      <li>✅ Criminal Recognition</li>
+      <li>✅ Missing Person Detection</li>
+      <li>✅ Real-Time Surveillance</li>
+      <li>✅ Public Area Monitoring</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Police CyberCrime Unit. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
